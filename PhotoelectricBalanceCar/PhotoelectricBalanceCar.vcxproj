@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E4EFFCE1-3C44-4D58-AA75-5195C14618E4}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/Kinetis_K60_DFP</BSP_ID>
+    <BSP_VERSION>1.5.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\src\app;..\..\..\..\src\common;..\..\..\..\src\cpu;..\..\..\..\src\cpu\headers;..\..\..\..\src\platforms;..\..\..\..\src\drivers;..\..\..\..\src\drivers\adc;..\..\..\..\src\drivers\AT24C02;..\..\..\..\src\drivers\exti;..\..\..\..\src\drivers\delay;..\..\..\..\src\drivers\FTM;..\..\..\..\src\drivers\gpio;..\..\..\..\src\drivers\i2c;..\..\..\..\src\drivers\LED;..\..\..\..\src\drivers\lptmr;..\..\..\..\src\drivers\mcg;..\..\..\..\src\drivers\PIT;..\..\..\..\src\drivers\pmc;..\..\..\..\src\drivers\rtc;..\..\..\..\src\drivers\uart;..\..\..\..\src\drivers\dma;..\..\..\..\src\drivers\wdog;..\..\..\..\src\drivers\lcd;..\..\..\..\src\drivers\UartScope;..\..\..\..\build;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>IAR;DEBUG;TWR_K60N512;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>;%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+      <LinkerScript />
+    </Link>
+    <KeilSettingsContainer />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\src\app;..\..\..\..\src\common;..\..\..\..\src\cpu;..\..\..\..\src\cpu\headers;..\..\..\..\src\platforms;..\..\..\..\src\drivers;..\..\..\..\src\drivers\adc;..\..\..\..\src\drivers\AT24C02;..\..\..\..\src\drivers\exti;..\..\..\..\src\drivers\delay;..\..\..\..\src\drivers\FTM;..\..\..\..\src\drivers\gpio;..\..\..\..\src\drivers\i2c;..\..\..\..\src\drivers\LED;..\..\..\..\src\drivers\lptmr;..\..\..\..\src\drivers\mcg;..\..\..\..\src\drivers\PIT;..\..\..\..\src\drivers\pmc;..\..\..\..\src\drivers\rtc;..\..\..\..\src\drivers\uart;..\..\..\..\src\drivers\dma;..\..\..\..\src\drivers\wdog;..\..\..\..\src\drivers\lcd;..\..\..\..\src\drivers\UartScope;..\..\..\..\build;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>IAR;DEBUG;TWR_K60N512;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\app\all_init.c" />
+    <ClInclude Include="..\..\..\..\src\app\all_init.h" />
+    <ClCompile Include="..\..\..\..\src\cpu\arm_cm4.c" />
+    <ClCompile Include="..\..\..\..\src\app\balance.c" />
+    <ClInclude Include="..\..\..\..\src\app\balance.h" />
+    <ClCompile Include="..\..\..\..\src\app\ccd.c" />
+    <ClInclude Include="..\..\..\..\src\app\ccd.h" />
+    <ClCompile Include="..\..\..\..\src\app\direction_control.c" />
+    <ClInclude Include="..\..\..\..\src\app\direction_control.h" />
+    <ClCompile Include="..\..\..\..\src\app\imu.c" />
+    <ClInclude Include="..\..\..\..\src\app\imu.h" />
+    <ClCompile Include="..\..\..\..\src\app\isr.c" />
+    <ClCompile Include="..\..\..\..\src\app\key.c" />
+    <ClInclude Include="..\..\..\..\src\app\key.h" />
+    <ClCompile Include="..\..\..\..\src\app\main.c" />
+    <ClCompile Include="..\..\..\..\src\app\oled.c" />
+    <ClInclude Include="..\..\..\..\src\app\oled.h" />
+    <ClCompile Include="..\..\..\..\src\app\speed.c" />
+    <ClInclude Include="..\..\..\..\src\app\speed.h" />
+    <ClCompile Include="..\..\..\..\src\app\view.c" />
+    <ClInclude Include="..\..\..\..\src\app\view.h" />
+    <ClCompile Include="..\..\..\..\src\common\alloc.c" />
+    <ClCompile Include="..\..\..\..\src\common\assert.c" />
+    <ClCompile Include="..\..\..\..\src\common\io.c" />
+    <ClCompile Include="..\..\..\..\src\common\memtest.c" />
+    <ClCompile Include="..\..\..\..\src\common\printf.c" />
+    <ClCompile Include="..\..\..\..\src\common\queue.c" />
+    <ClCompile Include="..\..\..\..\src\common\startup.c" />
+    <ClCompile Include="..\..\..\..\src\common\stdlib.c" />
+    <ClCompile Include="..\..\..\..\src\common\uif.c" />
+    <ClCompile Include="..\..\..\..\src\cpu\crt0.s" />
+    <ClCompile Include="..\..\..\..\src\cpu\start.c" />
+    <ClCompile Include="..\..\..\..\src\cpu\sysinit.c" />
+    <ClCompile Include="..\..\..\..\src\cpu\vectors.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\adc\adc.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\AT24C02\AT24C02.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\delay\delay.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\dma\dma.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\exti\exti.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\FTM\FTM.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\gpio\gpio.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\lcd\LCD_5110.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\LED\LED.C" />
+    <ClCompile Include="..\..\..\..\src\drivers\lptmr\lptmr.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\mcg\mcg.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\PIT\PIT.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\pmc\pmc.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\rtc\rtc.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\uart\uart.c" />
+    <ClCompile Include="..\..\..\..\src\drivers\wdog\wdog.c" />
+    <ClInclude Include="..\..\..\..\src\common\common.h" />
+    <ClInclude Include="..\..\..\..\src\drivers\fire_drivers_cfg.h" />
+    <ClInclude Include="..\..\..\..\src\app\include.h" />
+    <ClInclude Include="..\..\..\..\src\app\isr.h" />
+    <ClInclude Include="..\..\..\..\src\platforms\k60_fire.h" />
+    <None Include="mcu.props" />
+    <ClInclude Include="$(BSP_ROOT)\Device\Include\MK60D10.h" />
+    <None Include="PhotoelectricBalanceCar-Debug.vgdbsettings" />
+    <None Include="PhotoelectricBalanceCar-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>

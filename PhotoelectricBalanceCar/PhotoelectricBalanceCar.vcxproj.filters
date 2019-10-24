@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{924a908f-156b-48f1-ab00-992df20829cf}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{1446035f-9c58-4e0f-99ea-897ca6a07a9a}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{3de6f380-de7a-4a01-aa85-66fe3c8f9bae}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\app">
+      <UniqueIdentifier>{c8ebf89d-f769-49de-a6f2-c074b8364cdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\common">
+      <UniqueIdentifier>{cc82738f-df01-4d85-8a57-31c5db42ded9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\cpu">
+      <UniqueIdentifier>{c3e7de45-a240-44ef-a275-6dc2d0c41213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\drivers">
+      <UniqueIdentifier>{7eb5c5e5-30bd-4766-b05e-42275e819966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\headers">
+      <UniqueIdentifier>{36054a1a-af05-415b-a4e6-9d916405db7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\Device-specific files">
+      <UniqueIdentifier>{f5295d19-ca9b-4c5f-9e67-2c6aefd2c414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\app">
+      <UniqueIdentifier>{539ab45a-366d-400d-823e-720ee6003d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\common">
+      <UniqueIdentifier>{a9500eab-f673-4789-942d-40be1ac103f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\cpu">
+      <UniqueIdentifier>{964b1178-d0e6-42f2-ae44-c3160bba906a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\drivers">
+      <UniqueIdentifier>{5e6c0829-06fe-462e-a0e3-98d027b432e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\headers">
+      <UniqueIdentifier>{1d8627ee-4950-4916-9f1f-94cc283b7721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\Device-specific files">
+      <UniqueIdentifier>{ec581057-03a5-4fed-9b75-1840346eab8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{e78ce070-71b6-4195-95b4-65d87eab6e4f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\app\all_init.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\all_init.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\cpu\arm_cm4.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\app\balance.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\balance.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\app\ccd.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\ccd.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\app\direction_control.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\direction_control.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\app\imu.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\imu.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\app\isr.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\app\key.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\key.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\app\main.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\app\oled.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\oled.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\app\speed.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\speed.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\app\view.c">
+      <Filter>Source files\app</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\app\view.h">
+      <Filter>Source files\app</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\src\common\alloc.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\assert.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\io.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\memtest.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\printf.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\queue.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\startup.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\stdlib.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\common\uif.c">
+      <Filter>Source files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\cpu\crt0.s">
+      <Filter>Source files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\cpu\start.c">
+      <Filter>Source files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\cpu\sysinit.c">
+      <Filter>Source files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\cpu\vectors.c">
+      <Filter>Source files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\adc\adc.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\AT24C02\AT24C02.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\delay\delay.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\dma\dma.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\exti\exti.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\FTM\FTM.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\gpio\gpio.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\lcd\LCD_5110.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\LED\LED.C">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\lptmr\lptmr.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\mcg\mcg.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\PIT\PIT.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\pmc\pmc.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\rtc\rtc.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\uart\uart.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\drivers\wdog\wdog.c">
+      <Filter>Source files\drivers</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\src\common\common.h">
+      <Filter>Source files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\drivers\fire_drivers_cfg.h">
+      <Filter>Source files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\app\include.h">
+      <Filter>Source files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\app\isr.h">
+      <Filter>Source files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\platforms\k60_fire.h">
+      <Filter>Source files\headers</Filter>
+    </ClInclude>
+    <None Include="mcu.props">
+      <Filter>Source files\Device-specific files</Filter>
+    </None>
+    <ClInclude Include="$(BSP_ROOT)\Device\Include\MK60D10.h">
+      <Filter>Header files\Device-specific files</Filter>
+    </ClInclude>
+    <None Include="PhotoelectricBalanceCar-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="PhotoelectricBalanceCar-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="MCU.xml">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+  </ItemGroup>
+</Project>
